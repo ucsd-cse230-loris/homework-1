@@ -1,11 +1,6 @@
 COQMFFLAGS := -Q . LF  
 
-ALLVFILES := Basics.v BasicsTest.v Induction.v InductionTest.v Lists.v ListsTest.v
-
-turnin:
-	git add .
-	git commit -m "turnin"
-	git push -u origin main
+ALLVFILES := Basics.v Induction.v Lists.v
 
 build: Makefile.coq
 	$(MAKE) -f Makefile.coq
