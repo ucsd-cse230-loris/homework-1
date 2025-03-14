@@ -1,0 +1,48 @@
+{
+  "name": "CSE Spring 2025 Dev Container",
+  "image": "sakekasi/cse-230:8.19",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ejgallego.coq-lsp",
+        "KyleThompson.lean-vacuum"
+      ],
+      "settings": {
+        "lean-vacuum.language": "coq",
+        "lean-vacuum.pushOnSave": false,
+        "coqtop.binPath" : "/home/coq/.opam/default/bin",
+        "files.autoSave": "off",
+        "files.exclude": {
+          "**/*.vo": true,
+          "**/*.vok": true,
+          "**/*.vos": true,
+          "**/*.aux": true,
+          "**/*.glob": true,
+          "**/.git": true,
+          "**/.svn": true,
+          "**/.hg": true,
+          "**/CVS": true,
+          "**/.DS_Store": true,
+          "**/Thumbs.db": true,
+          "**/.classpath": true,
+          "**/.factorypath": true,
+          "**/.project": true,
+          "**/.settings": true,
+          "**/dump.json": true,
+          "jspm_packages/": true,
+          "node_modules/": true,
+          "out/*": true,
+          "**/*.html": true,
+          "**/.*.report": true,
+          "**/.*.cache": true
+        },
+        "coq.loadCoqProject": true,
+        "coq.coqProjectRoot": ".",
+        "[coq]": {
+          "editor.tabSize": 2,
+          "editor.insertSpaces": true
+        }
+      }
+    }
+  }
+}
