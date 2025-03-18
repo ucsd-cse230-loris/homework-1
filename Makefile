@@ -12,9 +12,14 @@ clean::
 Makefile.coq:
 	coq_makefile $(COQMFFLAGS) -o Makefile.coq $(ALLVFILES)
 
-autograde: 
+autograde: Basics.vo
 	coqc -Q . LF BasicsTest.v
+
+turnin:
+	git add .
+	git commit -m "turnin"
+	git push -u origin main
 
 -include Makefile.coq
 
-.PHONY: build clean
+.PHONY: build clean turnin autograde
