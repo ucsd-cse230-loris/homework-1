@@ -12,12 +12,15 @@ TODO: is there a limit to how many exercises we want them to do? Like is it just
 
 
 ## Grading
-If the Coq theorem prover accepts your proof of an exercise, then you will get full credit for that exercise.
+At any point, you may check your progress by running
+```bash
+$ make autograde
+```
 
 ## Submitting
 You can submit the assignment by running
-```
-make turnin
+```bash
+$ make turnin
 ```
 You may submit as often as you like. We will grade the latest submission at the assignment due date. 
 

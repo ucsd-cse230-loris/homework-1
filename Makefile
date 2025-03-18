@@ -1,6 +1,6 @@
 COQMFFLAGS := -Q . LF  
 
-ALLVFILES := Basics.v Induction.v Lists.v
+ALLVFILES := Basics.v BasicsTest.v
 
 build: Makefile.coq
 	$(MAKE) -f Makefile.coq
@@ -11,6 +11,9 @@ clean::
 
 Makefile.coq:
 	coq_makefile $(COQMFFLAGS) -o Makefile.coq $(ALLVFILES)
+
+autograde: 
+	coqc -Q . LF BasicsTest.v
 
 -include Makefile.coq
 
