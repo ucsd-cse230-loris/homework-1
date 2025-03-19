@@ -8,8 +8,6 @@ You do not have to install Coq to do this assignment. Instead, you can use Githu
 ## Instructions
 Follow the instructions in [Basics.v](Basics.v) to complete definitions and proofs that are currently completed using `Admitted`. 
 
-TODO: is there a limit to how many exercises we want them to do? Like is it just all up to 2 stars?
-
 
 ## Grading
 At any point, you may check your progress by running
