@@ -1128,7 +1128,7 @@ Proof.
 
 (** **** Exercise: 1 star, standard (mult_n_1)
 
-    Use [mult_n_Sm] and [mult_n_0] to prove the following
+    Use [mult_n_Sm] and [mult_n_O] to prove the following
     theorem.  (Recall that [1] is [S O].) *)
 
 Theorem mult_n_1 : forall p : nat,
