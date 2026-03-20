@@ -5,7 +5,6 @@
     "vscode": {
       "extensions": [
         "ejgallego.coq-lsp",
-        "KyleThompson.lean-vacuum"
       ],
       "settings": {
         "lean-vacuum.language": "coq",
